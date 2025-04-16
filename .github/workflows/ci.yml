@@ -26,7 +26,7 @@ jobs:
     - name: Compile Main Java Classes
       run: |
         mkdir -p bin
-        javac -cp "lib/*" -d bin src/main/java/simulations/MultiTenantFaaS.java
+        javac -cp "lib/*" -d bin src/com.garv.cloudsim/DeadlineAwareSimulation.java
 
     - name: Compile Test Classes
       run: |

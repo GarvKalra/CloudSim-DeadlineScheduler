@@ -3,6 +3,7 @@
 *.log
 build/
 out/
+!lib/*jar
 .idea/
 *.iml
 .DS_Store
