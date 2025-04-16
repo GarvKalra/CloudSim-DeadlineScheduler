@@ -24,9 +24,10 @@ jobs:
       run: ls -la lib/
 
     - name: Compile Main Java Classes
-      run: |
-        mkdir -p bin
-        javac -cp "lib/*" -d bin src/com/garv/cloudsim/DeadlineAwareSimulation.java
+  run: |
+    mkdir -p bin
+    find src/com/garv/cloudsim/ -name "*.java" > sources.txt
+    javac -cp "lib/*" -d bin @sources.txt
 
     - name: Compile Test Classes
       run: |
